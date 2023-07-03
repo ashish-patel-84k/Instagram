@@ -1,0 +1,2165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Home</title> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&family=Great+Vibes&display=swap" rel="stylesheet">
+    <style>
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+        #main_home{
+            display: flex;
+            position: absolute;
+            width: 100%;
+            height: auto;
+        }
+        #main_home .div1{
+            background: rgb(255, 255, 255);
+            height: 100vh;
+            width: 100%;
+            margin-left: 1px;
+            overflow: hidden;
+        }
+
+        #main_home
+        #home_navebar{
+            width: 17%;
+            font-size: 1rem;
+            font-family: arial;
+            font-weight: bold;
+            background: white;
+            position: fixed;
+            border-right: 1px solid rgb(235, 229, 229);
+        }
+
+        #main_home
+        #home_navebar #ul1{
+            height: 75%;
+            margin-top: 50px;
+        }
+
+        #main_home
+        #home_navebar #ul1 li{
+            display: flex;
+            padding:10px 40px;
+            margin: 0px 20px;
+            margin-top: 10px;
+            font-weight: 100;
+            border-radius: 5px;
+        }
+        #main_home
+        #home_navebar #ul1 li:hover{
+            color: rgb(31, 30, 30);
+            cursor: pointer;
+            background: rgb(248, 247, 247);
+        }
+        #main_home
+        #home_navebar #ul1 li i{
+            display: flex;
+            margin-right: 20px;
+            font-size: 1.4rem;
+        }
+
+
+
+        /* more option style */
+
+        #more_option_contenor{
+            position: absolute;
+            margin-left: -550px;
+            margin-top: -54vh;
+            background: rgb(255, 254, 254);
+            width: 100%;
+            overflow: hidden;
+            transition: .5s;
+            z-index: 50;
+            border-top: 1px solid rgb(230, 226, 226);
+            box-shadow: 0px 0px 10px rgb(228, 224, 224);
+        }
+
+       #more_option:hover #more_option_contenor{
+            margin-left: 0px;
+        }
+
+        #more_option_contenor ul{
+            height: 75%;
+            margin-top: 50px;
+
+        }
+
+        #more_option_contenor ul li{
+            display: flex;
+            padding:10px 20px;
+            margin: 0px 20px;
+            margin-top: 10px;
+            font-weight: 100;
+            border-radius: 5px;
+        } 
+
+        #more_option_contenor ul li:hover{
+            color: rgb(31, 30, 30);
+            cursor: pointer;
+            background: rgb(248, 247, 247);
+        }
+        
+        #more_option_contenor ul li i{
+            display: flex;
+            margin-right: 20px;
+            font-size: 1.4rem;
+        }
+
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        
+    </style>
+
+</head>
+<body>
+
+    <div id="main_home">
+
+        <div id="home_navebar"  class="div1">
+            <span style="background: white;
+            width: 100%; display: flex;justify-content: center;padding: 25px;font-size: 1.7rem;font-family: arial;font-family: 'Great Vibes';letter-spacing: 4px;"><i class="fa-brands fa-slack" style="margin-right: 20px;font-size: 2rem;color: #0077ff;"></i>Pointers</span>
+            <ul id="ul1">
+                <a href="Points.html"><li><i class="fa-solid fa-house"></i>Home</li></a>
+                <li><i class="fa-solid fa-magnifying-glass"></i>Search</li>
+                <li onclick="ExploreContenor();"><i class="fa-solid fa-compass"></i>Explore</li>
+                <li onclick="MainReel();"><i class="fa-brands fa-youtube"></i>Reels</li>
+                <li><i class="fa-solid fa-envelope"></i>Messages</li>
+                <li><i class="fa-sharp fa-solid fa-bell"></i>Notifications</li>
+                <li><i class="fa-solid fa-circle-plus"></i>Create</li>
+                <li onclick="MainProfileContenor();"><i class="fa-solid fa-user"></i>Profile</li>
+            </ul>
+            <br>
+            <span id="more_option" style="display: flex;justify-content: center;
+            padding: 22px;border-top: 1px solid rgb(223, 215, 215);margin-top: -50px;cursor: pointer;"><i class="fa-solid fa-list"></i>&nbsp;&nbsp;&nbsp;&nbsp; More
+
+
+
+        
+        
+<!-- more option style settings -->
+
+            <div id="more_option_contenor">
+                <ul>
+                   <a href="Settings.html"><li>Settings</li></a> 
+                    <li>Your Activity</li>
+                    <li>Save</li>
+                    <li>Report a Problem</li>
+                    <li>Switch Accounts</li>
+                    <li style="
+                    background: rgb(255, 0, 0);color: white;display: flex;justify-content: center;width: 100%;margin:10px 0px;" onclick="MainControlar();">Log Out</li>
+                </ul>
+            </div>
+                </span>
+
+
+                
+        </div>
+
+
+
+
+
+
+
+        <div style=" padding: 10px; width: 100%;overflow-y: scroll;display: flex;justify-content: center;" class="div1">
+
+
+                
+
+
+
+    <!-- login box style html css -->
+
+
+    <style>
+        #main_controlar{
+        position: absolute;
+        border:1px solid  teal;
+        width:400px;
+        margin-left: 30%;
+        background: white;
+        border-radius:20px;
+        box-shadow: 0px 0px 10px 0px inset #b3b5b6,
+        10px 10px 25px 0px #1a1919;
+        z-index: 100;
+        
+        }
+         
+        input{
+        width:300px;
+        height:30px;
+        border:none;
+        outline:none;
+        border-bottom:2px solid teal;
+        text-transform:capitalize;
+        }
+        
+        button{
+        width:150px;
+        height:35px;
+        border:none;
+        outline:none;
+        border-bottom:2px solid teal;
+        transition:1s; box-shadow:10px 10px 10px 0px grey;
+        border-radius:4px;
+        
+        }
+        
+        button:hover{
+        background:teal;
+        cursor:pointer;
+        
+        }
+        
+        button:active{
+        background:url(Special-Effects-PNG-Clipart-Background.gif);
+        background-position:center;
+        background-size:cover;
+        color:white;
+        }
+        
+        p{
+        margin:2px 5px;
+        font-weight:bold;
+        }
+        
+        
+        img{
+        
+        
+        }
+        
+        </style>
+        
+        <div style="display: flex;
+        justify-content: center;align-items: center;text-align: center;" id="hidden_login" >
+        <div id="main_controlar" hidden>
+            <i class="fa-solid fa-xmark" style="margin-left: 300px;margin-top: 20px;font-size: 2rem;cursor: pointer;" onclick="LoginClose();"></i>
+            <br><br>
+            <i class="fa-brands fa-slack" style="font-size: 5rem;color: #0077ff;"></i>
+        <h1 style="margin-top:-0px;margin-bottom: 60px;">Pointers</h1>
+        <input type="text" placeholder="User Name" >
+        <br><br>
+        <input type="password" placeholder="Password"><br><br>
+        <button>Log In </button>
+        <br><br>
+        
+        <div>
+        <input type="checkbox" style="width:20px;position:absolute; margin:-5px -80px;" >
+        <p>Ragister User</p>
+        <br>
+        <p style="">Forget User Id / Password</p><a href="#">Click Here</a>
+        <br><br><br>
+        </div></div></div>
+        
+
+<script>
+
+    
+// login box javascript code
+
+
+let  main_controlar = document.getElementById("main_controlar");
+
+function MainControlar(){
+    main_controlar.removeAttribute("hidden")
+}
+
+function LoginClose(){
+    main_controlar.setAttribute("hidden","")
+}
+
+</script>
+
+
+        
+
+            <!-- style reel video html css javascript -->
+                <style>
+                    #main_reel{ 
+                        position: absolute;
+                        height: 550px;
+                        width: 310px;
+                    }
+                    #main_reel #reel{ 
+                        position: absolute;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        text-align: center;
+                        height: 550px;
+                        width: 310px;
+                        border-radius: 10px;
+                        margin-top: 20px;
+                        background: rgb(241, 240, 240);
+                        box-shadow: 0px 0px 60px rgb(192, 186, 186);
+                    }
+                </style>
+               
+                <div id="main_reel" hidden>
+                    <div id="reel">
+            <!-- reel style  -->
+                        <style>
+                            #video{
+                                position: absolute;
+                                height: 100%;
+                                width: 100%;
+                                border-radius: 10px;
+                            }
+                        </style>
+            
+                    <video autoplay  src="1.mp4" id="video"></video>
+                        <style>
+                            /* like comments shear button styles */
+                            #icons_reel{
+                                position: absolute;
+                                margin-left:390px;
+                                margin-top: 220px;
+                            }
+                           #icons_reel p{
+                                margin-top: 30px;
+                                color: black;
+                                z-index: 100;
+                                font-size: 1.6rem;
+                                cursor: pointer;
+                            }
+                          
+                        #font{
+                            position: absolute;
+                            font-size: .9rem;
+                            margin-left: -12px;
+                            font-weight: bold;
+                            color: black;
+                            padding: 3px;
+                            border-radius: 50%;
+                            font-family: arial;
+                        }
+            
+                        #icons_reel p:hover{
+                            color: rgb(187, 189, 192);
+                        }
+                        </style>
+                     <div id="icons_reel">
+                        <p class="like"><i class="fa-regular fa-heart"></i><br><font id="font">3<strong>M</strong></font></p>
+                        <p class="Comment"><i class="fa-solid fa-comment"></i><br><font id="font">34<strong>k</strong></font><p>
+                        <p class="Shear"><i class="fa-regular fa-paper-plane fa-beat"></i><br><font id="font">34</font></p>
+                        <p><i class="fa-solid fa-bookmark"></i></p>
+                        <p><i class="fa-solid fa-ellipsis-vertical" ></i></p>
+                        <p id="music_reel"><i class="fa-solid fa-music fa-beat"></i></p>
+            
+                     </div>
+                     </div>
+                     
+            <!-- style header part -->
+            <style>
+                /* dp flow name button style */
+                #dp-flow1{
+                    margin-top: 460px;
+                    position: absolute;
+                    color: rgb(49, 46, 46);
+                    display: flex;
+                    width: 100%;
+                    text-align: center;
+                    align-items: center;
+                    font-weight: bold;
+                    font-family: arial;
+                }
+                #dp-flow1 p{
+                    display: flex;
+                    margin-left: 10px;
+                    font-size: 0.8rem;
+                    margin-top: 10px;
+                    cursor: pointer;
+                }
+                #dp-flow1 #dp1{
+                    background:url(2.jpg);
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    border:3px solid rgb(16, 32, 122);
+                    height: 50px;
+                    width: 50px;
+                    margin: 20px 0px 0px 5px;
+                    border-radius: 50%;
+                    cursor: pointer;
+                }
+            
+                #dp-flow1 #flow1{
+                    margin: 10px;
+                    border: 1px solid rgb(41, 37, 37);
+                    padding:5px 20px;
+                    color: rgb(3, 3, 3);
+                    font-family: arial;
+                    border-radius: 5px;
+                } 
+            
+                #dp-flow1 #flow1:hover{
+                    cursor: pointer;
+                    background: linear-gradient(30deg,rgb(0, 217, 255),red);
+                    color: white;
+                }
+                marquee{
+                    margin-top: 530px;
+                    font-weight: bold;
+                    color: rgb(29, 25, 25);
+                    font-family: arial;
+                    width: 200px;
+                }
+            
+               
+            </style>
+                    <div id="dp-flow1">
+                        <div id="dp1"></div>
+                        <p>@royal_king_84k</p>
+                        <p id="flow1">Flow</p>
+                    </div>
+                    <marquee>juda hoke jiyal na </marquee>
+                </div>
+                
+
+
+<!-- profile  coding -->
+
+
+
+
+ <style>
+
+        
+    .head_body{
+        margin-top: 1px;
+        height: 50vh;
+        background: white;
+    }
+
+    #head_part{
+        overflow: hidden;
+        display: flex;
+        height: auto;
+        justify-content: center;
+    }
+
+    #midel_part{
+        white-space: nowrap;
+        overflow-x:auto;
+        overflow-y: hidden;
+        height: 130px;
+        width: 80%;
+        margin-left: 90px;
+        padding-left: 20px;
+        justify-content: center;
+    }
+
+    #midel_part::-webkit-scrollbar{
+        display: none;
+    }
+
+    #midel_part #story{
+        display: inline-block;
+        background: url(3.jpg);
+        background-position: center;
+        background-size:cover;
+        background-repeat: no-repeat;
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        margin: 20px;
+
+    }
+    #midel_part #story:hover{
+        opacity: 50%;
+        cursor: pointer;
+    }
+
+    #head_part div{
+        margin-left: 1px;
+        width: auto;
+        height: 100%;
+    }
+
+    #head_part div #dp{
+        height: 155px;
+        width: 150px;
+        border-radius: 50%;
+        border: 1px solid red;
+        padding: 2px;
+        margin: 70px 0px 0px 10px;
+    }
+
+    #head_part div #dp:hover{
+        opacity: 50%;
+        cursor: pointer;
+    }
+
+    #head_part div #name{
+        margin-left: 10px;
+        font-family: arial;
+        font-weight: bold;
+        padding: 2px;
+        width: 170px;
+        text-align: center;
+        overflow: hidden;
+    }
+
+
+    #head_part div #user_name{
+        font-family: arial;
+        font-weight: 540;
+        letter-spacing: 2px;
+        margin: 10px;
+        padding: 10px;
+        width: 300px;
+        overflow: hidden;
+        background: white;
+        cursor: pointer;
+    }
+
+    #head_part div #bio{
+        font-size: 1rem;
+        font-weight: bold;
+        padding: 10px;
+        height: auto;
+        width: auto;
+        border-radius: 10px;
+    }
+
+    #head_part div .follow{
+        all: unset;
+        border: 1px solid rgb(247, 244, 244);
+        width: auto;
+        height: 15px;
+        color: rgb(0, 0, 0);
+        font-family: arial;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 10px;
+        border-radius: 4px;
+        padding: 10px;
+    }
+
+    #head_part div .follow:hover{
+        background: #0077ff;;
+        cursor: pointer;
+        box-shadow: 0px 0px 50px rgb(189, 187, 187);
+        border: 1px solid #0077ff;
+    }
+     
+    
+    #head_part div .follow p{
+        margin: 5px;
+        font-weight: bold;
+    }
+
+
+
+    #body_part{
+        float: left;
+        overflow: hidden;
+        height: 100%;
+        width: 100%;
+        margin-left: 90px;
+        justify-content: center;
+    }
+
+    #body_part ul{
+        display: flex;
+        background: #ffffff;
+        width: 100%;
+        padding: 10px;
+        justify-content: center;
+    }
+
+    #body_part ul li{
+        display: flex;
+        margin-left: 20px;
+        list-style: none;
+        font-weight: bold;
+        font-family: arial;
+        border-radius: 4px;
+        padding: 10px 30px;
+    }
+
+    #body_part ul li:hover{
+        background: rgb(236, 232, 232);
+        cursor: pointer;
+
+    }
+
+    #body_part #post{
+        float: left;
+        background: url(2.jpg);
+        background-position: center;
+        background-size:cover;
+        background-repeat: no-repeat;
+        height: 300px;
+        width: 200px;
+        border-radius: 4px;
+        margin: 4px;
+    }
+
+    #body_part #post:hover{
+        opacity: 50%;
+        cursor: pointer;
+    }
+
+
+    .head_body i{
+        margin-right: 20px;
+        color: red;
+        font-size: 1.4rem;
+    }
+
+    
+
+
+
+    #Reel_contenor video{
+        float: left;
+        height: 300px;
+        border-radius: 10px;
+        width: 170px;
+        border-radius: 4px;
+        margin: 4px;
+
+    }
+
+
+    #tags_contenor{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #Like_contenor{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    </style>
+
+
+    <div id="main_profile_contenor" style="width: 70%;margin-left: 150px;"hidden>
+
+        <div id="head_part" class="head_body">
+
+
+          <div><img src="1.jpg" id="dp"><br><p id="name">Ashish Patel(Kurmi)</p></div> 
+          <div>
+            <br>
+            <span style="display: flex;justify-content: center;">
+            <button class="follow"><p>85</p>Post</button>
+
+            <button class="follow" onclick="flowlist();"><p id="follower_number">200k</p><font id="follower">Follower</font></button>
+
+            <button class="follow" onclick="flowlist2();"><p id="follow_number">8</p><font id="follow">Follow</font></button>
+            </span>
+            <br>
+            <p id="user_name">@king_of_india_84k</p>
+            <span style="margin-left: 400px;width: 500px;">
+            <pre id="bio">
+                ❤️Cute Boye💕
+            (❤️ No Love ❤️) 
+                X﹏X No Pan X﹏X
+                Stay Happy
+            </pre>
+        </span>
+        </div>   
+        </div>
+
+
+        <div  id="midel_part"   class="head_body">
+            <p id="story"></p>
+            <p id="story"></p>
+            <p id="story"></p>
+            <p id="story"></p>
+            <p id="story"></p>
+            <p id="story"></p>
+            <p id="story"></p>
+            <p id="story"></p>
+            <p id="story"></p>
+            <p id="story"></p>
+            <p id="story"></p>
+            <p id="story"></p>
+        </div>
+
+
+
+
+
+        <div id="body_part"  class="head_body">
+            <ul>
+                <li onclick="postcontenor();"><i class="fa-solid fa-image"></i>Post</li>
+                <li onclick="Reelcontenor();"><i class="fa-brands fa-youtube"></i>Reel</li>
+                <li onclick="tagscontenor();"><i class="fa-solid fa-user"></i>tage</li>
+                <li onclick="Likecontenor();"><i class="fa-solid fa-thumbs-up"></i>like</li>
+            </ul>
+                <div id="post_contenor">
+                        <div id="post"></div>
+                        <div id="post"></div>
+                        <div id="post"></div>
+                        <div id="post"></div>
+                        <div id="post"></div>
+                        <div id="post"></div>
+                        <div id="post"></div>
+                        <div id="post"></div>
+                        <div id="post"></div>
+                        <div id="post"></div>
+                        <div id="post"></div>
+                        <div id="post"></div>
+                        <div id="post"></div>
+                        <div id="post"></div>
+                        <div id="post"></div>
+                        <div id="post"></div>
+                        <div id="post"></div>
+                        <div id="post"></div>
+                        <div id="post"></div>
+                    </div>
+
+
+                    <div id="Reel_contenor" hidden>
+                        <video controls src="1.mp4"></video>
+                        
+                        <video controls src="2.mp4"></video>
+                        
+                        <video controls src="3.mp4"></video>
+                        
+                        <video controls src="4.mp4"></video>
+                        
+                        <video controls src="5.mp4"></video>
+                        
+                        <video controls src="6.mp4"></video>
+                        
+                        <video controls src="7.mp4"></video>
+                        
+                        <video controls src="8.mp4"></video>
+                        
+                        <video controls src="9.mp4"></video>
+                        
+                        <video controls src="10.mp4"></video>
+                        
+                        <video controls src="11.mp4"></video>
+                        
+                        <video controls src="12.mp4"></video>
+                        
+                        <video controls src="13.mp4"></video>
+                        
+                        <video controls src="14.mp4"></video>
+                        
+                        <video controls src="15.mp4"></video>
+                        
+
+                    </div>
+
+
+
+
+                    <div id="tags_contenor" style="display: none;">
+                        <div>
+                            <br><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <i class="fa-solid fa-user" style="font-size: 10rem;"></i>
+                        <br><br>
+                        <h1>No Tag Selected</h1>
+                    </div>
+                    </div>
+
+                    
+
+                    <div id="Like_contenor" 
+                    style="display: none;">
+                        <div>
+                            <br><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <i class="fa-solid fa-thumbs-up" style="font-size: 10rem;"></i>
+                        <br><br>
+                        <h1>No Tag Selected</h1>
+                    </div>
+                    </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- Explore style html css -->
+ <style>
+    #Explore_contenor{
+        background: white;
+        height: 100%;
+        width: 100%;
+    }
+
+    #Explore_contenor #search_box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 1px solid rgb(236, 230, 230);
+        height: 20%;
+        width: 100%;
+    }
+
+    
+    #Explore_contenor #search_box input{
+        all: unset;
+        background: white;
+        padding: 20px;
+        width: 40%;
+        border: 1px solid rgb(236, 230, 230);
+    }
+
+    
+    #Explore_contenor #search_box button{
+        all: unset;
+        background: white;
+        padding: 20px;
+        width: 5%;
+        border: 1px solid rgb(236, 230, 230);
+        cursor: pointer;
+
+    }
+
+    #Explore_contenor #search_box button:hover{
+        color: #0077ff;
+    }
+
+    
+    #Explore_contenor #search_box select{
+        border: 1px solid rgb(236, 230, 230);
+        margin-right: -20%;
+        border-radius: 20px;
+        margin-left: 10%;
+        width: 100px;
+        height: 50px;
+    }
+
+    
+    #Explore_contenor #list_search{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 1px solid rgb(236, 230, 230);
+        height: 10%;
+        width: 100%;
+    }
+    
+       
+    #Explore_contenor #list_search li{
+        margin-left: 40%;
+        padding: 20px;
+    }
+
+        
+    #Explore_contenor #list_search li:hover{
+        border-bottom: 1px solid black;
+        cursor: pointer;
+    }
+
+    
+    #Explore_contenor #treanding_reel{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 1px solid rgb(236, 230, 230);
+        height: 50%;
+        width: 100%;
+        overflow: scroll;
+        overflow-y: hidden;
+        cursor: pointer;
+    }
+
+    #Explore_contenor #treanding_reel::-webkit-scrollbar{
+        display: none;
+    }
+
+    #Explore_contenor #treanding_post{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 1px solid rgb(236, 230, 230);
+        height: 40%;
+        width: 100%;
+        margin-left: 20%;
+        overflow: scroll;
+        overflow-y: hidden;
+        cursor: pointer;
+    }
+
+    #Explore_contenor #treanding_post::-webkit-scrollbar{
+        display: none;
+    }
+ </style>   
+    <div id="Explore_contenor" >
+        <div id="search_box">
+            <input type="text" placeholder="Search Profile ,Video ,tags,song"><button>Search</button>
+            <select name="" id="Select">
+                <option>Uttar pradesh</option>
+                <option>Madhya Pradesh</option>
+                <option>Gujarat</option>
+                <option>Bihar</option>
+                <option>Mumbai</option>
+                <option>Delhi</option>
+            </select>
+        </div>
+        <div id="list_search">
+            <ul style="display: flex;list-style: none;margin-left: -40%;">
+                <li onclick="postvideo();">Post</li>
+                <li onclick="tranding();">Tranding</li>
+                <li style="background:#0077ff;padding: 20px 50px;border-radius: 20px;filter: brightness(150%);color: white;">Live</li>
+                <li>Songs</li>
+            </ul>
+        </div>
+        
+        <span id="tranding_post" hidden>
+        <br>
+
+        <div style="
+        display: flex;
+        justify-content: center;
+        height: 10%;
+        width: 100%;font-family: arial;margin-left: -20%;"><h1>Treanding Reel</h1></div>
+
+        <div id="treanding_reel">
+            <video src="1.mp4" style="width: 15%;margin-left: 60%;"></video>
+            <video src="2.mp4" style="width: 15%;margin-left: 4px;"></video>
+            <video src="3.mp4" style="width: 15%;margin-left: 4px;"></video>
+            <video src="4.mp4" style="width: 15%;margin-left: 4px;"></video>
+            <video src="5.mp4" style="width: 15%;margin-left: 4px;"></video>
+            <video src="6.mp4" style="width: 15%;margin-left: 4px;"></video>
+            <video src="7.mp4" style="width: 15%;margin-left: 4px;"></video>
+            <video src="8.mp4" style="width: 15%;margin-left: 4px;"></video>
+
+    </div>
+
+<br>
+    <div style="
+        display: flex;
+        justify-content: center;
+        height: 10%;
+        width: 100%;font-family: arial;margin-left: -20%;"><h1>Treanding post</h1></div>
+
+        <div id="treanding_post">
+            <img src="1.jpg" style="width: 15%;margin-left: 60%;">
+            <img src="3.jpg" style="width: 15%;margin-left: 4px;">
+            
+            <img src="2.jpg" style="width: 15%;margin-left: 4px;">
+            <img src="3.jpg" style="width: 15%;margin-left: 4px;">
+            <img src="1.jpg" style="width: 15%;margin-left: 4px;">
+            <img src="3.jpg" style="width: 15%;margin-left: 4px;">
+            <img src="2.jpg" style="width: 15%;margin-left: 4px;">
+            <img src="3.jpg" style="width: 15%;margin-left: 4px;">
+            <img src="2.jpg" style="width: 15%;margin-left: 4px;">
+            <img src="3.jpg" style="width: 15%;margin-left: 4px;">
+            <img src="1.jpg" style="width: 15%;margin-left: 4px;">
+            <img src="2.jpg" style="width: 15%;margin-left: 4px;">
+            <img src="1.jpg" style="width: 15%;margin-left: 4px;">
+
+    </div>
+
+
+
+    <br>
+    <div style="
+        display: flex;
+        justify-content: center;
+        height: 10%;
+        width: 100%;font-family: arial;margin-left: -20%;"><h1>#india_pointer</h1></div>
+
+
+    <div id="treanding_post">
+        <img src="1.jpg" style="width: 15%;margin-left: 60%;">
+        <video src="5.mp4" style="width: 15%;margin-left: 4px;"></video>
+        <img src="3.jpg" style="width: 15%;margin-left: 4px;">
+        <video src="6.mp4" style="width: 15%;margin-left: 4px;"></video>
+        <img src="1.jpg" style="width: 15%;margin-left: 4px;">
+        <video src="7.mp4" style="width: 15%;margin-left: 4px;"></video>
+        <img src="2.jpg" style="width: 15%;margin-left: 4px;">
+        <video src="8.mp4" style="width: 15%;margin-left: 4px;"></video>
+        <img src="3.jpg" style="width: 15%;margin-left: 4px;">
+        <img src="3.jpg" style="width: 15%;margin-left: 4px;">
+        <img src="3.jpg" style="width: 15%;margin-left: 4px;">
+        
+
+</div>
+
+
+        </span>
+
+
+<!-- home post video -->
+
+<!-- story -->
+
+    <style>
+        #storys{
+            background: white;
+            margin:1% 20%;
+            overflow: hidden;
+            overflow-x: scroll;
+            white-space: nowrap;
+            height: 25%;
+            width: 80%;
+            border-radius: 3px;
+            padding: 10px; 
+        }
+
+
+        #storys::-webkit-scrollbar{
+            display: none;
+        }
+
+        #storys #story{
+            margin: 5px;
+            display: inline-block;
+        }
+        #storys #story img{
+            height: 15vh;
+            width: 15vh;
+            filter: brightness(120%);
+            border-radius: 50%;
+            border: 1px solid black;
+            padding: 4px;
+        }
+        #storys #story p{
+            font-weight: bold;
+            margin: 5px;
+            color:black;
+        }
+    </style>
+    <div id="Home_post">
+    <div id="storys">
+
+        <div id="story">
+            <img src="1.jpg">
+            <p>My story</p>
+        </div>
+
+        <div id="story">
+            <img src="1.jpg">
+            <p>User Name</p>
+        </div>
+
+
+        
+        <div id="story">
+            <img src="1.jpg">
+            <p>User Name</p>
+        </div>
+
+        <div id="story">
+            <img src="1.jpg">
+            <p>User Name</p>
+        </div>
+        
+
+        
+        <div id="story">
+            <img src="1.jpg">
+            <p>User Name</p>
+        </div>
+
+        <div id="story">
+            <img src="1.jpg">
+            <p>User Name</p>
+        </div>
+        
+
+        
+        <div id="story">
+            <img src="1.jpg">
+            <p>User Name</p>
+        </div>
+
+        <div id="story">
+            <img src="1.jpg">
+            <p>User Name</p>
+        </div>
+        
+
+        
+        <div id="story">
+            <img src="1.jpg">
+            <p>User Name</p>
+        </div>
+
+        <div id="story">
+            <img src="1.jpg">
+            <p>User Name</p>
+        </div>
+        
+
+        
+        <div id="story">
+            <img src="1.jpg">
+            <p>User Name</p>
+        </div>
+
+        <div id="story">
+            <img src="1.jpg">
+            <p>User Name</p>
+        </div>
+        
+
+        
+        <div id="story">
+            <img src="1.jpg">
+            <p>User Name</p>
+        </div>
+
+        <div id="story">
+            <img src="1.jpg">
+            <p>User Name</p>
+        </div>
+        
+
+        
+        <div id="story">
+            <img src="1.jpg">
+            <p>User Name</p>
+        </div>
+
+        <div id="story">
+            <img src="1.jpg">
+            <p>User Name</p>
+        </div>
+        
+
+    </div>
+
+
+
+
+<!-- main box styles -->
+<style>
+#card-main{
+    height: auto;
+    width: 350px;
+    margin-left: 40%;
+    margin-top: 20px;
+    border-radius: 10px;
+    background: rgb(241, 240, 240);
+    box-shadow: 0px 0px 10px rgb(189, 187, 187);
+}
+
+
+
+</style>
+    <div id="card-main">
+<!-- style header part -->
+<style>
+   
+    #dp-flow p{
+        display: flex;
+        margin-left: 10px;
+    }
+ 
+
+    #dp-flow #user_name{
+        overflow: hidden;
+        width: 140px;
+    }
+
+    #dp-flow #flow{
+        margin: 10px; 
+        background: blue;
+        padding:5px 20px;
+        color: white;
+        font-family: arial;
+        border-radius: 5px;
+    } 
+
+    #dp-flow #flow:hover{
+        cursor: pointer;
+        box-shadow: 0px 0px 30px 1px blue;
+        color: white;
+    }
+
+    #dp-flow i{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin-right: 5px;
+        font-size: 1.7rem;
+        padding: 20px;
+        height: 10px;
+        border-radius: 50%;
+    }
+
+    #dp-flow i:hover{
+        cursor: pointer;
+    }
+</style>
+        <div id="dp-flow" style="border: none;width: 100%;">
+            <img src="1.jpg" id="dp" style="width: 60px;height: 50px;">
+            <p id="user_name">@royal_king_84k</p>
+            <p id="flow">Flow</p>
+            <i class="fa-solid fa-ellipsis-vertical" ></i>
+        </div>
+<!-- post style page -->
+<style>
+    #post-main{
+        height: 430px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        width: auto;
+    }
+    #post-main img{
+        border-radius: 10px;
+        height: 95%;
+        width: 90%;
+    }
+</style>
+        <div id="post-main">
+            <video hidden></video>
+            <img src="2.jpg" alt="">
+        </div>
+        <!-- activitiy all -->
+        <style>
+
+            #like-shear-comment{
+                display: flex;
+                height: 50px;
+                width: 100%;
+                margin-top: -20px;
+            }
+
+            #like-shear-comment p{
+                margin-left: 4px;
+                padding:15px 2px;
+                font-size: 1.2rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+            }
+
+            #like-shear-comment p:hover{
+                cursor: pointer;
+            }
+            #like-shear-comment .like{
+                color: red;
+            }
+
+        </style>
+
+        <div id="like-shear-comment">
+            <p class="like"><i class="fa-solid fa-heart"></i></p>
+            <p class="Comment"><i class="fa-regular fa-comment"></i><p>
+            <p class="Shear"><i class="fa-regular fa-share-from-square"></i></p>
+            <p style="margin-left: 200px;"><i class="fa-solid fa-bookmark"></i></p>
+        </div>
+<!-- likes-counter -->
+
+<style>
+    #likes-counter{
+        display: flex;
+        font-family: arial;
+        font-weight: bold;
+        margin-left: 10px;
+    }
+
+    #likes-counter p{
+        margin-left: 4px;
+    }
+
+    #likes-counter #comment{
+        margin: 10px;
+        /* background: linear-gradient(30deg,red,rgb(0, 217, 255)); */
+        padding:5px 20px;
+        color: black;
+        border: 1px solid black;
+        font-family: arial;
+        border-radius: 5px;
+    } 
+
+    #likes-counter #comment:hover{
+        cursor: pointer;
+        background: red;
+        border: none;
+        box-shadow: 0px 0px 30px 1px black;
+        color: white;
+    }
+
+</style>
+        <div id="likes-counter">
+        <p>20K</p><p>Likes</p><p id="comment">Comments</p>
+        </div>
+    </div>
+
+
+
+<br>
+    <div style="margin-left: 40%;position: relative;">
+           <!-- post reel -->
+
+<!-- main box styles -->
+<style>
+
+    #card-main1{
+        position: absolute;
+        height: auto;
+        width: 350px;
+        border-radius: 10px;
+        background: rgb(241, 240, 240);
+        box-shadow: 0px 0px 10px rgb(189, 187, 187);
+        z-index: 1;
+    }
+    
+    
+    
+    </style>
+        <div id="card-main1">
+    
+    
+    <!-- style header part -->
+    <style>
+        
+    
+        #dp-flow #flow{
+            margin: 10px; 
+            background: blue;
+            padding:5px 20px;
+            color: white;
+            font-family: arial;
+            border-radius: 5px;
+        } 
+    
+        #dp-flow #flow:hover{
+            cursor: pointer;
+            box-shadow: 0px 0px 30px 1px blue;
+            color: white;
+        }
+    
+        #dp-flow i{
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            margin-right: 5px;
+            font-size: 1.7rem;
+            padding: 20px;
+            height: 10px;
+            border-radius: 50%;
+        }
+    
+        #dp-flow i:hover{
+            cursor: pointer;
+        }
+    </style>
+    
+            <div id="dp-flow" style="border: none;">
+                <img src="2.jpg" style="border-radius: 20%;height: 60px;">
+                <p>@royal_king_84k</p>
+                <p id="flow">Flow</p>
+                <i class="fa-solid fa-ellipsis-vertical" onclick="commentEdite();"></i>
+    
+                <style>
+                #dp-flow #comment_edite{
+                position: absolute;
+                background: rgb(247, 245, 245);
+                z-index: 100;
+                width: 50px;
+                border-radius: 10px;
+                box-shadow: 0px 0px 10px rgb(192, 186, 186);
+                margin: 100px 0px 0px 350px;
+            }
+    
+            #dp-flow #comment_edite li{
+                list-style: none;
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+    
+            #dp-flow #comment_edite li i{
+                font-size: 1.3rem;
+            }
+
+            
+            #dp-flow #comment_edite li i:hover{
+                font-size: 1.3rem;
+                color: #0077ff;
+                filter: brightness(150%);
+            }
+                </style>
+                <div id="comment_edite" hidden>
+                        <li><i class="fas fa-trash-alt" title="delete"></i></li>
+                        <li><i class="fas fa-eye-slash" title="Hidden"></i></li>
+                        <li><i class="fas fa-arrow-alt-circle-down" title="Downlod"></i></li>
+                        <li><i class="fas fa-exclamation" title="Repport"></i></li>
+                    </div>
+            </div>
+    
+    <!-- post style page -->
+    <style>
+        #post-main{
+            height:400px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            width: auto;
+        }
+        #post-main video{
+            border-radius: 10px;
+            height: 90%;
+            width: 90%;
+        }
+    </style>
+            <div id="post-main">
+                <video controls src="1.mp4"></video>
+            </div>
+            <!-- activitiy all -->
+            <style>
+    
+                #like-shear-comment{
+                    display: flex;
+                    height: 50px;
+                    width: 100%;
+                    margin-top: -20px;
+                }
+    
+                #like-shear-comment p{
+                    margin-left: 4px;
+                    padding:15px 2px;
+                    font-size: 1.2rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                }
+    
+                #like-shear-comment p:hover{
+                    cursor: pointer;
+                }
+                #like-shear-comment .like{
+                    color: red;
+                }
+    
+            </style>
+    
+            <div id="like-shear-comment">
+                <p class="like"><i class="fa-solid fa-heart"></i></p>
+                <p class="Comment"><i class="fa-regular fa-comment"></i><p>
+                <p class="Shear"><i class="fa-regular fa-share-from-square"></i></p>
+    
+                <p style="margin-left: 200px;"><i class="fa-solid fa-bookmark"></i></p>
+                <p style="margin-left: 20px;">
+            </div>
+    <!-- likes-counter -->
+    
+    <style>
+        #likes-counter{
+            display: flex;
+            font-family: arial;
+            font-weight: bold;
+            margin-left: 10px;
+        }
+    
+        #likes-counter p{
+            margin-left: 4px;
+        }
+    
+        #likes-counter #comment{
+            margin: 10px;
+            background: blue;
+            padding:5px 20px;
+            color: white;
+            font-family: arial;
+            border-radius: 5px;
+        } 
+    
+        #likes-counter #comment:hover{
+            cursor: pointer;
+            box-shadow: 0px 0px 30px 1px blue;
+            color: white;
+        }
+    
+        #likes-counter #music_reel{
+            margin-left: 70px;
+        }
+    
+    </style>
+            <div id="likes-counter">
+            <p>23143</p><p>Likes</p><p id="comment" onclick="Comment();">Comments</p>
+            <p id="music_reel"><i class="fa-solid fa-music fa-beat"></i></p>
+            </div>
+            
+    
+    
+    
+            
+        <style>
+            #comment_contenor{
+                position: absolute;
+                height: 550px;
+                width: 350px;
+                margin-top: -90vh;
+                margin-left: 100%;
+                background: rgb(241, 240, 240);
+                box-shadow: 0px 0px 10px rgb(189, 187, 187);
+                border-radius: 4px;
+                z-index: 1;
+                overflow: hidden;
+            }
+    
+            #comment_contenor #close_massege{
+                position: absolute;
+                top: 0%;
+                background: white;
+                width: 100%;
+                height: 10%;
+            }
+    
+            #comment_contenor #close_massege i{
+                position: absolute;
+                top: 10px;
+                border-radius: 50%;
+                font-size: 1.5rem;
+                padding: 10px;
+                left:20px;
+                color: black;
+            }
+    
+            #comment_contenor #comment-box{
+                position: absolute;
+                top: 10%;
+                background: white;
+                color: black;
+                width: 100%;
+                height: 80%;
+                overflow-y: scroll;
+                padding: 10px;
+            }
+    
+            #comment_contenor #comment-box #p{
+                margin-top: 10px;
+                background: white;
+                box-shadow: 0px 0px 10px rgb(236, 232, 232);
+                padding: 10px;
+                font-family: arial;
+                height: auto;
+                width: auto;
+            }
+    
+            #comment_contenor #comment-box #p img{
+                height: 50px;
+                width: 50px;
+                padding: 2px;
+                border: 1px solid black;
+                border-radius: 50%;
+            }
+    
+    
+            #comment_contenor #comment-box #p font{
+                margin-top: 0px;
+                position: absolute;
+            }
+            #comment_contenor #comment-box #p pree{
+                margin-left: 20px;
+                font-weight: 100;
+            }
+    
+            #comment_contenor #comment-box #p i{
+                margin-left: 20px;
+                font-weight: 100;
+                margin-top: 20px;
+            }
+    
+            #comment_contenor #comment-box #comment_edite{
+                display: flex;
+                position: absolute;
+                background: white;
+                padding: 10px;
+                z-index: 100;
+                border-radius: 10px;
+                box-shadow: 0px 0px 10px rgb(238, 233, 233);
+            }
+    
+            #comment_contenor #comment-box #comment_edite li{
+                list-style: none;
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+    
+    
+    
+    
+    
+            #comment_contenor #send_massage{
+                position: absolute;
+                top: 90%;
+                background: white;
+                width: 100%;
+                height: 12%;
+            }
+    
+            #comment_contenor textarea{
+                 position: absolute;
+                padding: 10px;
+                width: 330px;
+                height: 20px;
+                top: 4px;
+                border-radius: 5px;
+                padding: 25px 20px;
+                background: white;
+                outline: none;
+                border: 1px solid blue;
+               font-size: 1.2rem;
+                resize: none;
+                margin-left: 10px;
+            }
+    
+            #comment_contenor #send_massage p{
+                position: absolute;
+                top: 4px;
+                left:20px;
+                color: black;
+            }
+    
+            #comment_contenor p i{
+                position: absolute;
+                top: 10px;
+                border-radius: 50%;
+                font-size: 1.5rem;
+                padding: 5px;
+                left:270px;
+                color: black;
+            }
+            
+            #comment_contenor i:hover{
+                box-shadow: 0px 0px 50px rgb(189, 187, 187);
+                background: rgb(241, 240, 240);
+                cursor: pointer;
+            }
+    
+    
+        </style>
+    
+        <div id="comment_contenor" hidden>
+            <div id="close_massege">
+                <i class="fa-solid fa-xmark" onclick="CommentClose();"></i>
+                <i class="fa-solid fa-check" style="margin-left: 280px;"></i>
+    
+            </div>
+            <div id="comment-box">
+                <div id="p"> <img src="1.jpg" alt=""> <font>@royal_king_84k</font><pree>very nice song
+                    my name ashish aap kaha se ho </pree>
+                    
+                    <div><i class="far fa-thumbs-up" title="like"><b style="margin-left: 10px;">100</b></i>
+                    <i class="fa-solid fa-heart" title="Like_Heart"><b style="margin-left: 10px;">100</b></i> <i class="fa-solid fa-pen-to-square" title="Edit_Comment"></i>
+                    </div>
+    
+                    <div id="comment_edite">
+                        <li><i class="fas fa-trash-alt" title="delete"></i></li>
+                        <li><i class="fas fa-eye-slash" title="Hidden"></i></li>
+                        <li><i class="fab fa-fulcrum" title="pin_comment"></i></li>
+                        <li><i class="fas fa-exclamation" title="Repport"></i></li>
+                    </div>
+                </div>
+    
+                    
+                <div id="p"> <img src="1.jpg" alt=""> <font>@royal_king_84k</font><pree>very nice song
+                    my name ashish aap kaha se ho </pree>
+                    
+                    <div><i class="far fa-thumbs-up" title="like"><b style="margin-left: 10px;">100</b></i>
+                    <i class="fa-solid fa-heart" title="Like_Heart"><b style="margin-left: 10px;">100</b></i> <i class="fa-solid fa-pen-to-square" title="Edit_Comment"></i>
+                    </div>
+    
+                    <!-- <div id="comment_edite" >
+                        <li><i class="fas fa-trash-alt" title="delete"></i></li>
+                        <li><i class="fas fa-eye-slash" title="Hidden"></i></li>
+                        <li><i class="fab fa-fulcrum" title="pin_comment"></i></li>
+                        <li><i class="fas fa-exclamation" title="Repport"></i></li>
+                    </div> -->
+                </div>
+    
+                <div id="p"> <img src="1.jpg" alt=""> <font>@royal_king_84k</font><pree>very nice song
+                    my name ashish aap kaha se ho </pree>
+                    
+                    <div><i class="far fa-thumbs-up" title="like"><b style="margin-left: 10px;">100</b></i>
+                    <i class="fa-solid fa-heart" title="Like_Heart"><b style="margin-left: 10px;">100</b></i> <i class="fa-solid fa-pen-to-square" title="Edit_Comment"></i>
+                    </div>
+    
+                    <!-- <div id="comment_edite">
+                        <li><i class="fas fa-trash-alt" title="delete"></i></li>
+                        <li><i class="fas fa-eye-slash" title="Hidden"></i></li>
+                        <li><i class="fab fa-fulcrum" title="pin_comment"></i></li>
+                        <li><i class="fas fa-exclamation" title="Repport"></i></li>
+                    </div> -->
+                </div>
+    
+                
+                <div id="p"> <img src="1.jpg" alt=""> <font>@royal_king_84k</font><pree>very nice song
+                    my name ashish aap kaha se ho </pree>
+                    
+                    <div><i class="far fa-thumbs-up" title="like"><b style="margin-left: 10px;">100</b></i>
+                    <i class="fa-solid fa-heart" title="Like_Heart"><b style="margin-left: 10px;">100</b></i> <i class="fa-solid fa-pen-to-square" title="Edit_Comment"></i>
+                    </div>
+    
+                    <!-- <div id="comment_edite">
+                        <li><i class="fas fa-trash-alt" title="delete"></i></li>
+                        <li><i class="fas fa-eye-slash" title="Hidden"></i></li>
+                        <li><i class="fab fa-fulcrum" title="pin_comment"></i></li>
+                        <li><i class="fas fa-exclamation" title="Repport"></i></li>
+                    </div> -->
+                </div>
+    
+                
+                <div id="p"> <img src="1.jpg" alt=""> <font>@royal_king_84k</font><pree>very nice song
+                    my name ashish aap kaha se ho </pree>
+                    
+                    <div><i class="far fa-thumbs-up" title="like"><b style="margin-left: 10px;">100</b></i>
+                    <i class="fa-solid fa-heart" title="Like_Heart"><b style="margin-left: 10px;">100</b></i> <i class="fa-solid fa-pen-to-square" title="Edit_Comment"></i>
+                    </div>
+    
+                    <!-- <div id="comment_edite">
+                        <li><i class="fas fa-trash-alt" title="delete"></i></li>
+                        <li><i class="fas fa-eye-slash" title="Hidden"></i></li>
+                        <li><i class="fab fa-fulcrum" title="pin_comment"></i></li>
+                        <li><i class="fas fa-exclamation" title="Repport"></i></li>
+                    </div> -->
+                </div>
+    
+            </div>
+    
+            <div id="send_massage">
+            <textarea name="" id=""></textarea>
+            
+                <p>
+                    comment
+                    <i class="fa-regular fa-circle-right"></i>
+                </p>
+            </div>
+        </div></div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+        </div>
+
+
+
+<script>
+let Home_post = document.getElementById("Home_post");
+let comment_edite = document.getElementById("comment_edite");
+let comment_contenor = document.getElementById("comment_contenor");
+let tranding_postr = document.getElementById("tranding_post");
+let Reel_contenor = document.getElementById("Reel_contenor");
+let post_contenor = document.getElementById("post_contenor");
+
+
+let tags_contenor = document.getElementById("tags_contenor");
+let Like_contenor = document.getElementById("Like_contenor");
+
+
+
+function Reelcontenor(){
+    Reel_contenor.removeAttribute("hidden");
+    post_contenor.setAttribute("hidden","");
+    Like_contenor.setAttribute("style","display:none");
+    tags_contenor.setAttribute("style","display:none");
+
+}
+
+
+function postcontenor(){
+    post_contenor.removeAttribute("hidden");
+    Reel_contenor.setAttribute("hidden","");
+    Like_contenor.setAttribute("style","display:none");
+    tags_contenor.setAttribute("style","display:none");
+
+}
+
+
+function tagscontenor(){
+    tags_contenor.removeAttribute("style");
+    Like_contenor.setAttribute("style","display:none");
+    post_contenor.setAttribute("hidden","");
+    Reel_contenor.setAttribute("hidden","");
+
+}
+
+
+
+function Likecontenor(){
+    Like_contenor.removeAttribute("style");
+    tags_contenor.setAttribute("style","display:none");
+    post_contenor.setAttribute("hidden","");
+    Reel_contenor.setAttribute("hidden","");
+
+}
+
+
+function tranding(){
+    tranding_postr.removeAttribute("hidden");
+    Home_post.setAttribute("hidden","");
+
+}
+
+
+function postvideo(){
+    tranding_postr.setAttribute("hidden","");
+    Home_post.removeAttribute("hidden");
+
+}
+
+
+function Comment(){
+    comment_contenor.removeAttribute("hidden");
+
+}
+
+function CommentClose(){
+    comment_contenor.setAttribute("hidden","");
+
+}
+
+
+
+function commentEdite(){
+    comment_edite.removeAttribute("hidden");
+
+}
+
+
+</script>
+
+
+
+
+
+
+
+        <!-- flow list profile  -->
+
+        <!-- Follower list genreter-->
+<style>
+
+    #main-folower-contenor{
+        position: absolute;
+        margin: 5%;
+        margin-right: -20%;
+        width: auto;
+        height: auto;
+        padding: 40px 0px;
+        position: fixed;
+        overflow: hidden;
+        background: rgb(255, 255, 255);
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgb(230, 225, 225);
+       
+    }
+
+    #main-folower-contenor i{
+        cursor: pointer;
+        padding:7px 10px;
+        border-radius: 50%;
+    }
+
+    #main-folower-contenor i:hover{
+        background: rgb(241, 237, 237);
+        cursor: pointer;
+        color: red;
+    }
+    #main-folower-contenor2{
+        height: 400px;
+        overflow-y: scroll;  
+        overflow-x: hidden;
+        background: white;
+        border-top: 1px solid rgb(245, 240, 240);
+        border-bottom: 1px solid rgb(245, 240, 240);
+       
+    }
+
+    #main-folower-contenor2::-webkit-scrollbar{
+        display: none;
+    }
+
+    
+    #dp-flow{
+        display: flex;
+        width: 90%;
+        text-align: center;
+        border-radius: 10px;
+        align-items: center;
+        font-weight: bold;
+        font-family: arial;
+        border: 1px solid rgb(190, 184, 184);
+        margin: 10px;
+        padding: 10px;
+    }
+    #dp-flow p{
+        display: flex;
+        margin-left: 10px;
+    }
+    #dp-flow #dp{
+        padding: 2px;
+        border:1px solid rgb(16, 32, 122);
+        height: 50px;
+        width: 70px;
+        margin: 20px 0px 0px 5px;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+
+    #dp-flow #dp #error{
+        background: rgb(1, 255, 1);
+        box-shadow: 0px 0px 10px 4px rgb(1, 255, 1);
+        width: 15px;
+        height: 15px;
+        justify-content: center;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        margin-top: 43px;
+        color: red;
+        margin-left: 30px;
+        border-radius: 50%;
+
+    }
+
+    #dp-flow #flow{
+        margin: 10px; 
+        background: blue;
+        padding:5px 20px;
+        color: white;
+        font-family: arial;
+        border-radius: 5px;
+    } 
+
+    #dp-flow #flow:hover{
+        cursor: pointer;
+        box-shadow: 0px 0px 30px 1px blue;
+        color: white;
+    }
+
+    #dp-flow i{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin-right: 5px;
+        font-size: 1.7rem;
+        padding: 20px;
+        height: 10px;
+        border-radius: 50%;
+    }
+
+    #dp-flow i:hover{
+        cursor: pointer;
+    }
+</style>
+<div id="main-folower-contenor" hidden>
+    <div style="height: 2vh;"><h1 style="margin-top: -40px;float: right;margin-right: 20px;"><font style="margin-right: 120px;font-size: 1.2rem;">List <font>Following</font></font><i class="fa-solid fa-xmark" onclick="FollowerListColose();"></i></h1></div>
+    <div  id="main-folower-contenor2" >
+        <div id="dp-flow">
+            <img src="1.jpg" id="dp">
+            <p>@royal_king_84k</p>
+            <p id="flow">Flow</p>
+            <i class="fa-solid fa-ellipsis-vertical" ></i>
+        </div>
+        
+
+        
+        <div id="dp-flow">
+            <img src="1.jpg" id="dp">
+            <p>@royal_king_84k</p>
+            <p id="flow">Flow</p>
+            <i class="fa-solid fa-ellipsis-vertical" ></i>
+        </div>
+
+        
+        <div id="dp-flow">
+            <img src="1.jpg" id="dp">
+            <p>@royal_king_84k</p>
+            <p id="flow">Flow</p>
+            <i class="fa-solid fa-ellipsis-vertical" ></i>
+        </div>
+
+
+        
+        <div id="dp-flow">
+            <img src="1.jpg" id="dp">
+            <p>@royal_king_84k</p>
+            <p id="flow">Flow</p>
+            <i class="fa-solid fa-ellipsis-vertical" ></i>
+        </div>
+
+
+        
+        <div id="dp-flow">
+            <img src="1.jpg" id="dp">
+            <p>@royal_king_84k</p>
+            <p id="flow">Flow</p>
+            <i class="fa-solid fa-ellipsis-vertical" ></i>
+        </div>
+
+
+        
+        <div id="dp-flow">
+            <img src="1.jpg" id="dp">
+            <p>@royal_king_84k</p>
+            <p id="flow">Flow</p>
+            <i class="fa-solid fa-ellipsis-vertical" ></i>
+        </div>
+
+
+        
+        <div id="dp-flow">
+            <img src="1.jpg" id="dp">
+            <p>@royal_king_84k</p>
+            <p id="flow">Flow</p>
+            <i class="fa-solid fa-ellipsis-vertical" ></i>
+        </div>
+
+
+        
+        <div id="dp-flow">
+            <img src="1.jpg" id="dp">
+            <p>@royal_king_84k</p>
+            <p id="flow">Flow</p>
+            <i class="fa-solid fa-ellipsis-vertical" ></i>
+        </div>
+
+
+        
+        <div id="dp-flow">
+            <img src="1.jpg" id="dp">
+            <p>@royal_king_84k</p>
+            <p id="flow">Flow</p>
+            <i class="fa-solid fa-ellipsis-vertical" ></i>
+        </div>
+
+        
+        <div id="dp-flow">
+            <img src="1.jpg" id="dp">
+            <p>@royal_king_84k</p>
+            <p id="flow">Flow</p>
+            <i class="fa-solid fa-ellipsis-vertical" ></i>
+        </div>
+        <div id="dp-flow">
+            <img src="1.jpg" id="dp">
+            <p>@royal_king_84k</p>
+            <p id="flow">Flow</p>
+            <i class="fa-solid fa-ellipsis-vertical" ></i>
+        </div>
+    </div>
+    
+    <div style="height: 2vh;"><h1 style="margin-top: 10px;display: flex;justify-content: center;"><font style="font-size: 1.2rem;" id="follow_number_set">20k </font>&nbsp;<font id="follow_set" style="font-size: 1.2rem;">Following_name</font></i></h1></div>
+
+    
+</div>
+
+
+       
+    </div>
+
+
+    
+    <script>
+
+        let flowlist1 =document.getElementById("main-folower-contenor");
+
+
+        let follow_number_get =document.getElementById("follow_number").innerHTML.valueOf();
+         let follow =document.getElementById("follow").innerHTML.valueOf();
+
+
+         
+        let follower_number_get =document.getElementById("follower_number").innerHTML.valueOf();
+        let follower =document.getElementById("follower").innerHTML.valueOf();
+
+
+        function flowlist(){
+            flowlist1.removeAttribute("hidden")
+                let follower_number_set =document.getElementById("follow_number_set").innerHTML= follower_number_get;
+                let follower_set =document.getElementById   ("follow_set").innerHTML= follower;
+
+}
+
+
+
+
+        function flowlist2(){
+            flowlist1.removeAttribute("hidden")
+            let follower_set =document.getElementById("follow_set").innerHTML= follow;
+            let follow_number_set =document.getElementById("follow_number_set").innerHTML=follow_number_get;
+            
+            
+        }
+
+         function FollowerListColose(){
+            flowlist1.setAttribute("hidden","");
+
+            }
+
+
+
+
+            // profile hiden display
+
+
+            let main_profile_contenor = document.getElementById("main_profile_contenor");
+
+
+            function MainProfileContenor(){
+                main_profile_contenor.removeAttribute("hidden")
+                main_reel.setAttribute("hidden","");
+                Explore_contenor.setAttribute("style","display: none;");
+
+            }
+
+
+
+// rell part  javascript code
+
+
+let main_reel = document.getElementById("main_reel");
+
+
+function MainReel(){
+main_reel.removeAttribute("hidden");
+main_profile_contenor.setAttribute("hidden","");  
+Explore_contenor.setAttribute("style","display: none;");
+}
+
+
+// Explore_contenor 
+
+let Explore_contenor= document.getElementById("Explore_contenor");
+
+console.log(Explore_contenor)
+
+function ExploreContenor(){
+    Explore_contenor.setAttribute("style","display: block;");
+    main_reel.setAttribute("hidden","");
+    main_profile_contenor.setAttribute("hidden","");  
+}
+
+    </script>
+
+    
+
+</body>
+</html>
